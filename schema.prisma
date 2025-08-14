@@ -1,0 +1,27 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+
+model Submission {
+  id        String   @id @default(cuid())
+  aadhaar   String?
+  aadhaarName String?
+  mobile    String?
+  captcha   String?
+  otp       String?
+  panNumber String?
+  panName   String?
+  pinCode   String?
+  district  String?
+  state     String?
+  orgType   String?
+ payload   String
+  createdAt DateTime @default(now())
+}

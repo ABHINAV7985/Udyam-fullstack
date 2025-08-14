@@ -1,0 +1,143 @@
+{
+  "generatedAt": "offline",
+  "source": "https://udyamregistration.gov.in/UdyamRegistration.aspx",
+  "steps": [
+    {
+      "title": "Step 1 \u2013 Aadhaar & OTP",
+      "fields": [
+        {
+          "id": "aadhaarNumber",
+          "name": "aadhaarNumber",
+          "label": "Aadhaar Number",
+          "tag": "input",
+          "type": "text",
+          "placeholder": "12-digit Aadhaar",
+          "required": true,
+          "pattern": "^\\d{12}$",
+          "maxlength": 12
+        },
+        {
+          "id": "aadhaarName",
+          "name": "aadhaarName",
+          "label": "Name as per Aadhaar",
+          "tag": "input",
+          "type": "text",
+          "required": true,
+          "maxlength": 100
+        },
+        {
+          "id": "mobile",
+          "name": "mobile",
+          "label": "Registered Mobile Number",
+          "tag": "input",
+          "type": "text",
+          "placeholder": "10-digit mobile",
+          "required": true,
+          "pattern": "^\\d{10}$",
+          "maxlength": 10
+        },
+        {
+          "id": "captcha",
+          "name": "captcha",
+          "label": "Captcha",
+          "tag": "input",
+          "type": "text",
+          "required": true,
+          "maxlength": 10
+        },
+        {
+          "id": "otp",
+          "name": "otp",
+          "label": "OTP",
+          "tag": "input",
+          "type": "text",
+          "placeholder": "6-digit OTP",
+          "required": false,
+          "pattern": "^\\d{6}$",
+          "maxlength": 6
+        }
+      ]
+    },
+    {
+      "title": "Step 2 \u2013 PAN Validation",
+      "fields": [
+        {
+          "id": "panNumber",
+          "name": "panNumber",
+          "label": "PAN Number",
+          "tag": "input",
+          "type": "text",
+          "placeholder": "ABCDE1234F",
+          "required": true,
+          "pattern": "^[A-Z]{5}[0-9]{4}[A-Z]{1}$",
+          "maxlength": 10
+        },
+        {
+          "id": "panName",
+          "name": "panName",
+          "label": "Name as per PAN",
+          "tag": "input",
+          "type": "text",
+          "required": true,
+          "maxlength": 100
+        },
+        {
+          "id": "pinCode",
+          "name": "pinCode",
+          "label": "PIN Code",
+          "tag": "input",
+          "type": "text",
+          "placeholder": "6-digit PIN",
+          "required": true,
+          "pattern": "^\\d{6}$",
+          "maxlength": 6
+        },
+        {
+          "id": "district",
+          "name": "district",
+          "label": "District/City",
+          "tag": "input",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "state",
+          "name": "state",
+          "label": "State",
+          "tag": "input",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "orgType",
+          "name": "orgType",
+          "label": "Organisation Type",
+          "tag": "select",
+          "required": true,
+          "options": [
+            {
+              "label": "Proprietorship",
+              "value": "proprietorship"
+            },
+            {
+              "label": "Partnership",
+              "value": "partnership"
+            },
+            {
+              "label": "Private Limited",
+              "value": "pvtltd"
+            },
+            {
+              "label": "LLP",
+              "value": "llp"
+            },
+            {
+              "label": "Other",
+              "value": "other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
